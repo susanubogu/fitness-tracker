@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="main.js"></script>
+</head>
+<body>
+  <h1>Fitness Tracker</h1>
+
+  <div id="workoutForm">
+    <h2>Log a New Workout</h2>
+    <form id="logWorkoutForm">
+      <label for="exercise">Exercise Type:</label>
+      <input type="text" id="name" required>
+
+      <label for="duration">Duration (minutes):</label>
+      <input type="number" id="duration" required>
+
+      <label for="intensity">Intensity:</label>
+      <select id="intensity" required>
+        <option value="low">Low</option>
+        <option value="moderate">Moderate</option>
+        <option value="high">High</option>
+      </select>
+
+      <button id="submit" type="submit">Log Workout</button>
+    </form>
+  </div>
+
+  <div id="workoutHistory">
+    <h2>Workout History</h2>
+    <ul id="workoutList">
+      <li>
+        <span>Sample Workout - 30 minutes (High)</span>
+        <button class="delete-button">Delete</button>
+    </li>
+    </ul>
+  </div>
+
+  <div id="editModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeEditModal">&times;</span>
+      <label for="editExercise">Exercise Type:</label>
+      <input type="text" id="editExercise">
+      <label for="editDuration">Duration (minutes):</label>
+      <input type="number" id="editDuration">
+      <label for="editIntensity">Intensity:</label>
+      <select id="editIntensity">
+        <option value="low">Low</option>
+        <option value="moderate">Moderate</option>
+        <option value="high">High</option>
+      </select>
+      <button id="saveEdit">Save</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script> 
+</body>
+</html>

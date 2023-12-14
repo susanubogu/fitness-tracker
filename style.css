@@ -1,0 +1,66 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  #workoutForm, #workoutHistory, #progressCharts {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  label {
+    margin-bottom: 8px;
+  }
+  
+  input, select, button {
+    margin-bottom: 16px;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #workoutHistory ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #workoutHistory li {
+    margin-bottom: 8px;
+  }
+
+  .delete-button {
+    margin-left: 8px;
+    margin-right: 8px; /* Adjust the spacing as needed */
+}
+
+.edit-button {
+    margin-left: 8px;
+    margin-right: 8px; /* Adjust the spacing as needed */
+}
